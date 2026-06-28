@@ -77,6 +77,15 @@ An Android app that helps you figure out what to cook with the ingredients you a
 - **Recipe ratings** — rate recipes, stored in Firestore
 - **External recipe fallback** — when no local match is found, search a global recipe API (Spoonacular) or generate one with AI instead
 
+## 📲 Download APK
+
+You can download the latest version of SmartChef APK directly from GitHub:
+
+[![Download APK](https://img.shields.io/badge/Download-APK-orange?style=for-the-badge&logo=android)](https://github.com/dev-toobakalam/SmartChef/raw/main/apk/SmartChef.apk)
+
+**Direct Link:**  
+[SmartChef.apk](https://github.com/dev-toobakalam/SmartChef/raw/main/apk/SmartChef.apk)
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
