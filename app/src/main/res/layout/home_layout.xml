@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Delicious Food"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“Cooking is like love. It should be entered into with abandon or not at all.”"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/extraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover new recipes and enjoy cooking every day!"
+        android:textColor="@color/textSecondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

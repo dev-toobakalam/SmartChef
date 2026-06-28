@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== CANONICAL COLORS — use these in any new code ===== -->
+    <color name="colorPrimary">#FF7043</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="tabSelectedColor">#FF5722</color>
+    <color name="tabUnselectedColor">#BDBDBD</color>
+    <color name="primaryLightColor">#FFD7CA</color>
+
+    <color name="backgroundColor">#FFF3E0</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="inputBackground">#FFFFFF</color>
+
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="titleColor">#8B4513</color>
+    <color name="labelColor">#555555</color>
+
+    <color name="buttonBackgroundColor">#FF6F00</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="iconTint">#607D8B</color>
+
+    <!-- ===== LEGACY ALIASES — kept so old references don't break.
+         Safe to delete individually once you confirm (via Find in Files)
+         that nothing in your project uses that specific name anymore. ===== -->
+    <color name="primaryColor">#FF5722</color>          <!-- alias of tabSelectedColor -->
+    <color name="primaryDarkColor">#E64A19</color>       <!-- alias of colorPrimaryDark -->
+    <color name="primaryTextColor">#212121</color>       <!-- alias of textPrimary -->
+    <color name="primaryText">#212121</color>            <!-- alias of textPrimary -->
+    <color name="secondaryTextColor">#757575</color>     <!-- alias of textSecondary -->
+    <color name="buttonText">#FFFFFF</color>             <!-- alias of buttonTextColor -->
+    <color name="sectionTitleColor">#FF5722</color>      <!-- alias of tabSelectedColor -->
+    <color name="tabBarColor">#FF7043</color>            <!-- alias of colorPrimary -->
+    <color name="buttonBackground">#4CAF50</color>       <!-- unique green, kept in case it's used somewhere -->
+
+</resources>

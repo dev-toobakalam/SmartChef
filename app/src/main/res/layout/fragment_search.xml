@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Search Label – Centered -->
+    <TextView
+        android:id="@+id/tvSearchLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_recipes"
+        android:textSize="28sp"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Tip banner: explains both search modes, dismissible -->
+    <LinearLayout
+        android:id="@+id/tipBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cardBackground"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/search_tip"
+            android:textSize="12sp"
+            android:textColor="@color/textSecondary" />
+
+        <ImageButton
+            android:id="@+id/btnDismissTip"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:padding="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Dismiss tip"
+            app:tint="@color/textSecondary" />
+    </LinearLayout>
+
+    <!-- Input row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/inputBackground"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/ingredientInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_ingredients"
+            android:inputType="text"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textSecondary"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@null"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Scan"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_camera" />
+
+        <ImageButton
+            android:id="@+id/btnVoice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Voice"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_micc" />
+    </LinearLayout>
+
+    <!-- Search & Generate Buttons (Equal Width) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="52dp"
+            android:text="@string/search_button"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/buttonTextColor"
+            android:backgroundTint="@color/buttonBackgroundColor"
+            app:cornerRadius="14dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGenerateRecipe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="52dp"
+            android:text="✨ Find with AI"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:padding="0dp"
+            android:textColor="@color/buttonTextColor"
+            android:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="14dp" />
+    </LinearLayout>
+
+    <!-- Bottom Area: Placeholder Image (dietary filters removed permanently) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <!-- Image size kept at 180dp (your original) -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_recipe_placeholder"
+            android:contentDescription="Recipe placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start by entering your ingredients to find delicious recipes!"
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

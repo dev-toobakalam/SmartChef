@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">سمارٹ شیف</string>
+
+    <!-- Navigation -->
+    <string name="home">ہوم</string>
+    <string name="search">تلاش</string>
+    <string name="settings">ترتیبات</string>
+    <string name="favorites">پسندیدہ</string>
+    <string name="shopping_list">خریداری کی فہرست</string>
+
+    <!-- Search Screen -->
+    <string name="search_recipes">ریسیپی تلاش کریں</string>
+    <string name="enter_ingredients">اجزاء کا نام لکھیں یا ریسیپی کا نام لکھیں</string>
+    <string name="search_hint">مثلاً: چکن، ٹماٹر، پیاز</string>
+    <string name="search_tip">💡 ٹِپ: اجزاء لکھ کر تلاش کریں، یا ریسیپی کا نام لکھ کر اے آئی سے ریسیپی پوچھیں</string>
+    <string name="search_button">تلاش کریں</string>
+    <string name="generate_recipe">✨ اے آئی سے ریسیپی بنائیں</string>
+    <string name="camera_coming_soon">کیمرہ سکیننگ جلد آرہی ہے!</string>
+    <string name="voice_prompt">اجزاء بولیں</string>
+    <string name="no_voice_support">آپ کا آلہ صوتی ان پٹ کو سپورٹ نہیں کرتا</string>
+    <string name="please_enter_ingredient">براہ کرم کم از کم ایک جز درج کریں۔</string>
+    <string name="max_10_ingredients">براہ کرم زیادہ سے زیادہ 10 اجزاء درج کریں۔</string>
+
+    <!-- Settings / Language -->
+    <string name="select_language">زبان منتخب کریں</string>
+    <string name="english">انگریزی</string>
+    <string name="urdu">اردو</string>
+    <string-array name="languages_array">
+        <item>انگریزی</item>
+        <item>اردو</item>
+    </string-array>
+
+    <!-- AI Generation Screen -->
+    <string name="ai_generated_recipe_title">🌟 اے آئی سے بنائی گئی ریسیپی</string>
+    <string name="select_cuisine">کھانے کی قسم منتخب کریں</string>
+
+    <!-- Recipe List -->
+    <string name="no_recipes_found">\'%s\' کے لیے کوئی ریسیپی نہیں ملی</string>
+    <string name="failed_to_load">ریسیپیز لوڈ کرنے میں ناکامی</string>
+
+    <!-- Recipe Detail -->
+    <string name="ingredients">اجزاء</string>
+    <string name="instructions">ہدایات</string>
+    <string name="recipe_name">ریسیپی کا نام</string>
+    <string name="no_name">کوئی نام نہیں</string>
+    <string name="no_instructions">کوئی ہدایات نہیں</string>
+    <string name="no_ingredients_listed">کوئی اجزاء درج نہیں</string>
+    <string name="invalid_image_url">تصویر کا لنک درست نہیں</string>
+    <string name="recipe_id_not_provided">ریسیپی آئی ڈی فراہم نہیں کی گئی</string>
+    <string name="recipe_not_found">ریسیپی نہیں ملی</string>
+    <string name="error_fetching_recipe">ریسیپی لوڈ کرنے میں ناکامی</string>
+
+    <!-- Favorites -->
+    <string name="added_to_favorites">پسندیدہ میں شامل کیا گیا</string>
+    <string name="removed_from_favorites">پسندیدہ سے ہٹا دیا گیا</string>
+    <string name="no_favorites_yet">ابھی تک کوئی محفوظ ریسیپی نہیں</string>
+
+    <!-- Shopping List -->
+    <string name="shopping_list_hint">وہ اشیاء شامل کریں جو آپ کو خریدنی ہیں</string>
+    <string name="add_item">شامل کریں</string>
+    <string name="empty_shopping_list">آپ کی خریداری کی فہرست خالی ہے</string>
+
+    <!-- Ratings -->
+    <string name="rating">درجہ بندی</string>
+    <string name="submit_rating">درجہ بندی جمع کریں</string>
+
+    <!-- Formatted Recipe Display -->
+    <string name="ingredients_heading">🛒 اجزاء</string>
+    <string name="steps_heading">📖 طریقہ کار</string>
+    <string name="prep_time_label">⏱ تیاری کا وقت: %s</string>
+
+    <!-- AI Fallback -->
+    <string name="fallback_recipe_title">🌟 اے آئی ریسیپی (متبادل)</string>
+    <string name="fallback_recipe_steps">1۔ تمام اجزاء تیار کریں۔\n2۔ پین میں تیل گرم کریں۔\n3۔ اجزاء کو 5 منٹ تک بھونیں۔\n4۔ مصالحے ڈالیں اور 10 منٹ تک پکائیں۔\n5۔ گرم گرم پیش کریں اور لطف اٹھائیں!</string>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Using a guaranteed system drawable -->
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/ic_empty_search"
+        android:contentDescription="No recipes found" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oops! No recipes found in our kitchen."
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't worry — try one of these instead:"
+        android:textSize="14sp"
+        android:textColor="@color/textSecondary"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSpoonacular"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="52dp"
+            android:text="🌍 World Kitchen"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/buttonTextColor"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:cornerRadius="14dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGemini"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="52dp"
+            android:text="✨ Ask AI Chef"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/buttonTextColor"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="14dp" />
+    </LinearLayout>
+
+    <!-- Plain-language explanation of what each button actually does -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌍 World Kitchen searches a huge online recipe database for matching dishes."
+            android:textSize="12sp"
+            android:textColor="@color/textSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ AI Chef creates a brand-new recipe just for your ingredients."
+            android:textSize="12sp"
+            android:textColor="@color/textSecondary"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

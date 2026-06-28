@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/backgroundColor">
+
+    <!-- Custom Toolbar (Orange Banner) -->
+    <include layout="@layout/toolbar_custom" />
+
+    <ImageView
+        android:id="@+id/cameraImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_camera" />
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/buttonTextColor" />
+
+    <Button
+        android:id="@+id/useImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use This Image"
+        android:enabled="false"
+        android:backgroundTint="@color/buttonBackgroundColor"
+        android:textColor="@color/buttonTextColor" />
+</LinearLayout>

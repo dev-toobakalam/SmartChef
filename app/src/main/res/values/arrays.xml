@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="cuisine_array">
+        <item>Pakistani</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Mexican</item>
+        <item>Indian</item>
+        <item>Any</item>
+    </string-array>
+
+    <!-- NEW: Language options -->
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Urdu</item>
+    </string-array>
+</resources>
