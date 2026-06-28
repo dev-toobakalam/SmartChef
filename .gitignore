@@ -16,7 +16,6 @@ local.properties
 
 # Added for security
 app/release/
-*.apk
 *.jks
 *.keystore
 google-services.json
