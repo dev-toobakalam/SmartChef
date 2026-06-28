@@ -4,66 +4,16 @@ An Android app that helps you figure out what to cook with the ingredients you a
 
 ## 📸 Screenshots
 
-### 🏠 Home & Search
-
-<p align="center">
-  <img src="Screenshots/home .png" width="200" />
-  <img src="Screenshots/search.png" width="200" />
-  <img src="Screenshots/matched.png" width="200" />
-</p>
-<p align="center">
-  <em>Home Screen • Search Ingredients • Matched Recipes</em>
-</p>
-
----
-
-### 🤖 AI Recipe Generation
-
-<p align="center">
-  <img src="Screenshots/ai_setup.png" width="200" />
-  <img src="Screenshots/ai_page.png" width="200" />
-  <img src="Screenshots/spoonacular.png" width="200" />
-</p>
-<p align="center">
-  <em>AI Setup • AI Generated Recipe • Spoonacular Fallback</em>
-</p>
-
----
-
-### ❤️ Favorites & Shopping List
-
-<p align="center">
-  <img src="Screenshots/fav.png" width="200" />
-  <img src="Screenshots/shopping.png" width="200" />
-</p>
-<p align="center">
-  <em>Favorites • Shopping List</em>
-</p>
-
----
-
-### 📷 Camera & Settings
-
-<p align="center">
-  <img src="Screenshots/camera.png" width="200" />
-  <img src="Screenshots/settings.png" width="200" />
-</p>
-<p align="center">
-  <em>Camera Ingredient Scanner • Settings (Language Toggle)</em>
-</p>
-
----
-
-### 🌐 Urdu Language Support
-
-<p align="center">
-  <img src="Screenshots/urdu.png" width="200" />
-</p>
-<p align="center">
-  <em>App UI in Urdu</em>
-</p>
-
----
+| | | |
+|---|---|---|
+| **Home Screen** | **Search Ingredients** | **Matched Recipes** |
+| ![Home](./Screenshots/home%20.png) | ![Search](./Screenshots/search.png) | ![Matched](./Screenshots/matched.png) |
+| **AI Setup** | **AI Generated Recipe** | **Spoonacular Fallback** |
+| ![AI Setup](./Screenshots/ai_setup.png) | ![AI Page](./Screenshots/ai_page.png) | ![Spoonacular](./Screenshots/spoonacular.png) |
+| **Favorites** | **Shopping List** | **Camera Ingredient Scanner** |
+| ![Favorites](./Screenshots/fav.png) | ![Shopping List](./Screenshots/shopping.png) | ![Camera](./Screenshots/camera.png) |
+| **Settings (Language Toggle)** | **App UI in Urdu** | |
+| ![Settings](./Screenshots/settings.png) | ![Urdu](./Screenshots/urdu.png) | |
 
 ## ✨ Features
 
