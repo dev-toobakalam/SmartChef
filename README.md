@@ -7,7 +7,7 @@ An Android app that helps you figure out what to cook with the ingredients you a
 ### 🏠 Home & Search
 
 <p align="center">
-  <img src="Screenshots/home.png" width="200" />
+  <img src="Screenshots/home .png" width="200" />
   <img src="Screenshots/search.png" width="200" />
   <img src="Screenshots/matched.png" width="200" />
 </p>
