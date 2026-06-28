@@ -83,8 +83,10 @@ You can download the latest version of SmartChef APK directly from GitHub:
 
 [![Download APK](https://img.shields.io/badge/Download-APK-orange?style=for-the-badge&logo=android)](https://github.com/dev-toobakalam/SmartChef/raw/main/apk/SmartChef.apk)
 
-**Direct Link:**  
+**Direct Link:**
 [SmartChef.apk](https://github.com/dev-toobakalam/SmartChef/raw/main/apk/SmartChef.apk)
+
+> Since this APK isn't distributed through the Play Store, your phone will ask for permission to "install from unknown sources" the first time — this is a normal one-time prompt for any app installed outside the Play Store.
 
 ## 🛠️ Tech Stack
 
@@ -115,6 +117,7 @@ You can download the latest version of SmartChef APK directly from GitHub:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Android Studio (latest stable)
 - A Firebase project with **AI Logic** (Gemini Developer API) enabled
 - A [Spoonacular API key](https://spoonacular.com/food-api) (free tier available)
@@ -122,5 +125,71 @@ You can download the latest version of SmartChef APK directly from GitHub:
 ### Setup
 
 1. Clone the repo:
+
    ```bash
    git clone https://github.com/dev-toobakalam/SmartChef.git
+   ```
+
+2. Add your Firebase config:
+   - Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+   - Enable **AI Logic** → Gemini Developer API (no billing required on the free Spark plan)
+   - Download `google-services.json` and place it in `app/`
+
+3. Add your Spoonacular key:
+   - Create a `local.properties` file in the project root (if it doesn't already exist)
+   - Add the following line:
+     ```properties
+     SPOONACULAR_API_KEY=your_key_here
+     ```
+
+4. Open the project in Android Studio, let Gradle sync, and run.
+
+> **Security note:** No API key is shipped inside the compiled app. Gemini access goes through Firebase AI Logic, which is authenticated via `google-services.json` rather than an embedded key, and the Spoonacular key is injected at build time through `BuildConfig` rather than hardcoded into source.
+
+## 🌐 Localization
+
+The app fully supports English and Urdu. Strings live in:
+
+- `res/values/strings.xml` — default (English)
+- `res/values-ur/strings.xml` — Urdu
+
+Language can be switched anytime from the **Settings** tab — the app recreates itself immediately to apply the change across every screen, including the bottom navigation tabs.
+
+## 📂 Project Structure
+
+```
+SmartChef/
+├── app/
+│   └── src/main/
+│       ├── java/com/mad/smartchef/
+│       │   ├── activities/        # Dashboard, Main, RecipeDetail, RecipeList,
+│       │   │                      #   GenerateRecipe, SpoonacularDetail, Camera
+│       │   ├── Fragments/          # Search, Settings, RecipeList, Favorites,
+│       │   │                      #   ShoppingList
+│       │   ├── adapter/            # RecyclerView adapters (recipes, etc.)
+│       │   ├── models/             # RecipeModel
+│       │   ├── data/               # Room entities & DAOs (favorites, shopping list)
+│       │   └── utils/              # Locale handling (LocalHelper)
+│       └── res/
+│           ├── layout/             # Screen & item layouts
+│           ├── values/             # Default strings, colors, styles, arrays
+│           ├── values-ur/          # Urdu translations
+│           ├── menu/                # Bottom navigation menu
+│           ├── drawable/           # Icons & vector assets
+│           └── font/                # Poppins font family
+├── apk/                            # Pre-built APK for direct download
+├── Screenshots/                    # README screenshots
+├── gradle/
+└── build.gradle.kts
+```
+
+## 🔮 Possible Future Improvements
+
+- Dish images for AI-generated recipes
+- Offline recipe caching
+- More cuisines and dietary preference support
+- Migrate camera capture to CameraX (currently uses the legacy intent-based camera API)
+
+## 📄 License
+
+This project was built for educational/portfolio purposes.
